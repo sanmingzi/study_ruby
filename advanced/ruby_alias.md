@@ -1,7 +1,5 @@
 # Ruby alias
 
-[Refenrence](https://blog.bigbinary.com/2012/01/08/alias-vs-alias-method.html)
-
 ## Usage
 
 ```
@@ -61,3 +59,7 @@ In contrast `alias_method` treats `self` as the value determined at the run time
 ## Conclusion
 
 Use alias_method, because it is more flexible.
+
+## Reference
+
+https://blog.bigbinary.com/2012/01/08/alias-vs-alias-method.html
