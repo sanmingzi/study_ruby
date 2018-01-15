@@ -20,7 +20,7 @@ change_string(obj_string)
 puts "#{obj_string}.object_id = #{obj_string.object_id}"
 ```
 
-![](/assets/str_obj.png)
+![](/assets/str_obj_000.png)
 
 ![](/assets/str_obj_001.png)
 
