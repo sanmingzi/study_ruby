@@ -1,7 +1,5 @@
 https://github.com/1c7/ruby-airbnb
 
-
-
 - 写行内注释的时候，在代码和注释之间放 1 个空格
 
 - 操作符两边放一个空格
