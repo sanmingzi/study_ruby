@@ -2,7 +2,7 @@
 
 http://www.devalot.com/articles/2008/09/ruby-singleton
 
-## open the singleton class directly
+## Open the singleton class directly
 ```
 arr = Array.new
 
