@@ -23,7 +23,7 @@ module A::C
 end
 ```
 
-### ancestors
+### Ancestors
 
 If can not find the constant in the nesting, it will find the constant in the ancestors.
 
@@ -52,9 +52,9 @@ module C
 end
 ```
 
-## method lookup
+## Method lookup
 
-### object method lookup
+### Instance method lookup
 
 ```
 class Animal
@@ -89,10 +89,10 @@ puts wangcai.singleton_class.ancestors.inspect
 # [#<Class:#<Dog:0x007fdf4c1dc918>>, Dog, Eat, Animal, Object, Kernel, BasicObject]
 ```
 
-* find in singleton_class of the object
-* find ancestors of singleton_class
+- find in singleton_class of the object
+- find ancestors of singleton_class
 
-### class method lookup
+### Class method lookup
 
 ```
 class Animal
@@ -119,5 +119,5 @@ puts Dog.singleton_class.ancestors.inspect
 # [#<Class:Dog>, Eat, #<Class:Animal>, #<Class:Object>, #<Class:BasicObject>, Class, Module, Object, Kernel, BasicObject]
 ```
 
-* find in singleton_class of the object (Class also is an object)
-* find ancestors of singleton_class
+- find in singleton_class of the object (Class also is an object)
+- find ancestors of singleton_class

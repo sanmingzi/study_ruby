@@ -4,4 +4,10 @@
   - [Ruby code style](basic/ruby_code_style.md)
 - [Advanced](advanced/README.md)
   - [Ruby alias](advanced/ruby_alias.md)
-
+  - [Ruby define_method](advanced/ruby_define_method.md)
+  - [Ruby delegate](advanced/ruby_delegate.md)
+  - [Ruby environment variable](advanced/ruby_environment_variable.md)
+  - [Ruby inject](advanced/ruby_inject.md)
+  - [Ruby name conflict between method and variable](advanced/ruby_method_variable_name_conflict.md)
+  - [Ruby tap](advanced/ruby_tap.md)
+  - [Ruby value or reference ?](advanced/ruby_value_reference.md)
