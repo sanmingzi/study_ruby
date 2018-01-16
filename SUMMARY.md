@@ -11,3 +11,6 @@
   - [Ruby name conflict between method and variable](advanced/ruby_method_variable_name_conflict.md)
   - [Ruby tap](advanced/ruby_tap.md)
   - [Ruby value or reference ?](advanced/ruby_value_reference.md)
+  - [Ruby lambda proc](advanced/ruby_lambda_proc.md)
+- [Class](class/README.md)
+- [Module](module/README.md)
