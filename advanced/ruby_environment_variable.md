@@ -6,7 +6,7 @@ We can only use the export environment variables in ruby ENV.
 
 We can use "set -a" to source a key-value profile.
 
-```
+```ruby
 # profile.env
 NAME=zhiming
 

@@ -7,7 +7,7 @@
 
 ## Case 1
 
-```
+```ruby
 obj_string = String.new("zhiming")
 puts "#{obj_string}.object_id = #{obj_string.object_id}"
 
@@ -38,7 +38,7 @@ str = String.new("chiming")
 
 ## Case 2
 
-```
+```ruby
 obj_string = String.new("zhiming")
 puts "#{obj_string}.object_id = #{obj_string.object_id}"
 

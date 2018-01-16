@@ -1,7 +1,8 @@
 # Ruby singleton class
 
 ## Open the singleton class directly
-```
+
+```ruby
 arr = Array.new
 
 class << arr
@@ -22,10 +23,8 @@ end
 arr.size
 arr.name="sorted array"
 puts arr.name
-```
 
-```
-arr -> Singleton -> Array
+# arr -> Singleton -> Array
 ```
 
 The method "size" is overwrite in the singleton class.
@@ -33,7 +32,7 @@ But when you use "arr.class", it return "Array" instead.
 
 ## Singleton method from module
 
-```
+```ruby
 module Foo
   def foo
   end

@@ -2,7 +2,7 @@
 
 ## Usage
 
-```
+```ruby
 class Boy < User; end
 
 class Girl < User; end

@@ -2,9 +2,9 @@
 
 ## Usage
 
-Assigning a property to an object
+- Assigning a property to an object
 
-```
+```ruby
 # TRADITIONAL
 object = SomeClass.new
 object.key = 'value'
@@ -19,9 +19,9 @@ end
 obj = SomeClass.new.tap { |obj| obj.key = 'value' }
 ```
 
-Ignoring method return
+- Ignoring method return
 
-```
+```ruby
 # TRADITIONAL
 object = Model.new
 object.save!
@@ -36,9 +36,9 @@ end
 object = Model.new.tap(&:save!)
 ```
 
-Using in-place operations chained
+- Using in-place operations chained
 
-```
+```ruby
 # TRADITIONAL
 arr = [1, 2, 3]
 arr.reverse!
@@ -50,4 +50,4 @@ arr
 
 ## Reference
 
-http://seejohncode.com/2012/01/02/ruby-tap-that/
+- http://seejohncode.com/2012/01/02/ruby-tap-that/

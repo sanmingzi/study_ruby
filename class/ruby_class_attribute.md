@@ -2,7 +2,7 @@
 
 ## attr_accessor
 
-```
+```ruby
 class Person
   attr_accessor :name
 end
@@ -10,7 +10,7 @@ end
 
 The above code is equal to:
 
-```
+```ruby
 class Person
   def name
     @name
@@ -24,7 +24,7 @@ end
     
 ## attr_reader attr_writer
 
-```
+```ruby
 class Person
   attr_reader :name
   attr_writer: name
@@ -33,7 +33,7 @@ end
 
 ## cattr_accessor
 
-```
+```ruby
 class Person
   cattr_accessor :count
 end
@@ -41,7 +41,7 @@ end
     
 The above code is equal to:
 
-```
+```ruby
 class Person
   def count
     @@count

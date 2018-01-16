@@ -2,7 +2,7 @@
 
 ## Usage
 
-```
+```ruby
 class User
   def full_name
     puts "Johnnie Walker"
@@ -24,7 +24,7 @@ In case of `alias_method`, we need to use a comma between the "new method name" 
 
 ## Difference betwen alias and alias_method
 
-```
+```ruby
 class Foo
   def hello
     puts "Hello from Foo"
@@ -62,4 +62,4 @@ Use alias_method, because it is more flexible.
 
 ## Reference
 
-https://blog.bigbinary.com/2012/01/08/alias-vs-alias-method.html
+- https://blog.bigbinary.com/2012/01/08/alias-vs-alias-method.html

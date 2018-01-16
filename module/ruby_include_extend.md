@@ -10,7 +10,7 @@
 
 ### Demo1
 
-```
+```ruby
 module Test
   C = 10
 end
@@ -35,7 +35,7 @@ in above demo, we use include and self.method1, this can access the constant in 
 
 ### Demo2
 
-```
+```ruby
 module Test
   C = 10
 end
@@ -62,7 +62,7 @@ in above demo, we use extend and class << self, this can access the constant in 
 
 ## include vs extend
 
-```
+```ruby
 class XXX
   extend module
 end
@@ -70,7 +70,7 @@ end
 
 等效于
 
-```
+```ruby
 class XXX
   class << self
     include module

@@ -4,7 +4,7 @@
 
 ### Module.nesting
 
-```
+```ruby
 module A
   NAME = 'zhiming'
 end
@@ -27,7 +27,7 @@ end
 
 If can not find the constant in the nesting, it will find the constant in the ancestors.
 
-```
+```ruby
 module A
   NAME = 'zhiming'
 end
@@ -56,7 +56,7 @@ end
 
 ### Instance method lookup
 
-```
+```ruby
 class Animal
   def eat
     puts 'Animal is eating'
@@ -94,7 +94,7 @@ puts wangcai.singleton_class.ancestors.inspect
 
 ### Class method lookup
 
-```
+```ruby
 class Animal
   def self.eat
     puts 'Animal is eating'

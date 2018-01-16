@@ -2,7 +2,7 @@
 
 ## Usage
 
-```
+```ruby
 @arr = [1, 2, 3]
 
 def sum(init_result = 0)
@@ -21,11 +21,10 @@ p hash.inject([]) { |result, (k, v)| result << [k, v]; result }
 arr = [['a', 1], ['b', 2]]
 p arr.inject({}) { |result, v| result[v.first] = v.last; result }
 
-
 # [["a", 1], ["b", 2]]
 # {"a"=>1, "b"=>2}
 ```
 
 ## Reference
 
-https://apidock.com/ruby/Enumerable/inject
+- https://apidock.com/ruby/Enumerable/inject

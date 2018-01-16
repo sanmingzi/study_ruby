@@ -2,7 +2,7 @@
 
 ## Usage
 
-```
+```ruby
 class Greeter < ActiveRecord::Base
   def hello
     'hello'
@@ -21,7 +21,7 @@ end
 
 ## Delegate to other object
 
-```
+```ruby
 class Foo
   CONSTANT_ARRAY = [0,1,2,3]
   @@class_array  = [4,5,6,7]
@@ -37,7 +37,7 @@ end
 
 ## Delegate to class
 
-```
+```ruby
 class Foo
   def self.hello
     "world"
@@ -51,7 +51,7 @@ end
 
 - prefix
 
-```
+```ruby
 Person = Struct.new(:name, :address)
 
 class Invoice < Struct.new(:client)
@@ -64,9 +64,9 @@ invoice.client_name    # => "John Doe"
 invoice.client_address # => "Vimmersvej 13"
 ```
 
-You can also use customer prefix.
+- custome prefix
 
-```
+```ruby
 class Invoice < Struct.new(:client)
   delegate :name, :address, to: :client, prefix: :customer
 end
@@ -78,7 +78,7 @@ invoice.customer_address # => 'Vimmersvej 13'
 
 - allow_nil
 
-```
+```ruby
 class User < ActiveRecord::Base
   has_one :profile
   delegate :age, to: :profile
@@ -89,7 +89,7 @@ User.new.age # raises NoMethodError: undefined method `age'
 
 If the delegated object is nil, Use allow_nil can avoid the Exception and it will return nil.
 
-```
+```ruby
 class User < ActiveRecord::Base
   has_one :profile
   delegate :age, to: :profile, allow_nil: true
@@ -100,6 +100,6 @@ User.new.age # nil
 
 ## Refence
 
-* https://apidock.com/rails/Module/delegate
-* https://simonecarletti.com/blog/2009/12/inside-ruby-on-rails-delegate/
-* https://blog.lelonek.me/how-to-delegate-methods-in-ruby-a7a71b077d99
+- https://apidock.com/rails/Module/delegate
+- https://simonecarletti.com/blog/2009/12/inside-ruby-on-rails-delegate/
+- https://blog.lelonek.me/how-to-delegate-methods-in-ruby-a7a71b077d99

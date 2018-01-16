@@ -2,7 +2,7 @@
 
 ## const_get && constants
 
-```
+```ruby
 module Animal
   class Dog
     VAL = 10
