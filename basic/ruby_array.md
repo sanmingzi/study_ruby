@@ -4,7 +4,7 @@
 
 - error
 
-If we use this way to init the dimensional array, when we modify data in one row and one column, the other data in the same column will also be modified.
+If we use this way to init the two dimensional array, when we modify data in one row and one column, the other data in the same column will also be modified.
 
 ```ruby
 data = Array.new(3, Array.new(2, 0))
