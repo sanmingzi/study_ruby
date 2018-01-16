@@ -2,6 +2,7 @@
 
 - [Basic](basic/README.md)
   - [Ruby code style](basic/ruby_code_style.md)
+  - [Ruby array](basic/ruby_array.md)
 - [Advanced](advanced/README.md)
   - [Ruby alias](advanced/ruby_alias.md)
   - [Ruby define_method](advanced/ruby_define_method.md)
