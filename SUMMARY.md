@@ -21,4 +21,7 @@
   - [Ruby include extend](module/ruby_include_extend.md)
   - [Ruby method constant lookup](module/ruby_method_constant_lookup.md)
   - [Ruby module constant](module/ruby_module_constant.md)
+- [Rails](rails/README.md)
+  - [Rails ActiveRecord](rails/activerecord/README.md)
+    - [Ruby Rails Scope](rails/activerecord/scope.md)
   
