@@ -4,8 +4,8 @@
 
 ```ruby
 ApplicationController < ActionController::Base
-  # current_system_user is come from devise
-  alias_method :pundit_user, :current_system_user
+  # current_user is come from devise
+  alias_method :pundit_user, :current_user
 end
 
 class ApplicationPolicy
@@ -21,14 +21,30 @@ end
 ## Scope
 
 ```ruby
+class PostController < ApplicationController
+  include Pundit
+
+  def index
+    @posts = policy_scope(Post)
+  end
+end
+
+class PostPolicy < ApplicationPolicy
+  class Scope < Scope
+    def resolve
+    end
+  end
+end
 ```
+
+`policy_scope(Post)` is equal to `PostPolicy::Scope.new(current_user, Post).resolve`
 
 ## Authorization
 
 ```ruby
 class PostPolicy < ApplicationPolicy
   def update?
-    user.admin? && record.published?
+    user.admin? || !record.published?
   end
 end
 
@@ -37,7 +53,7 @@ class PostController < ApplicationController
 
   def update
     @post = Post.find(params[:id])
-    authorize @post
+    authorize @post # or authorize @post, :update?
   end
 end
 ```
