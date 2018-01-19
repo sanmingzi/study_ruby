@@ -57,3 +57,4 @@ I think it is so useful to use scope in association models.
 ## Reference
 
 - http://blog.plataformatec.com.br/2013/02/active-record-scopes-vs-class-methods/
+- http://api.rubyonrails.org/classes/ActiveRecord/Scoping/Named/ClassMethods.html
