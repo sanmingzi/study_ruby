@@ -24,8 +24,7 @@ The main difference between both usages is that `bad` is evaluated when the clas
 
 ```ruby
 class Post < ActiveRecord::Base
-  scope :by_status, -> (status) { where('status>= ?', status)
-  }
+  scope :by_status, -> (status) { where('status>= ?', status) }
 end
 
 ```

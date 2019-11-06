@@ -12,7 +12,7 @@
   * [Ruby lambda proc](advanced/ruby_lambda_proc.md)
   * [Ruby name conflict between method and variable](advanced/ruby_method_variable_name_conflict.md)
   * [Ruby tap](advanced/ruby_tap.md)
-  * [Ruby value or reference ?](advanced/ruby_value_reference.md)
+  * [Ruby value or reference](advanced/ruby_value_reference.md)
 * [Class](class/README.md)
   * [Ruby class attribute](class/ruby_class_attribute.md)
   * [Ruby singleton class](class/ruby_singleton_class.md)
@@ -24,6 +24,3 @@
 * [Rails](rails/README.md)
   * [Rails ActiveRecord](rails/activerecord/README.md)
     * [Ruby Rails Scope](rails/activerecord/scope.md)
-
-
-

@@ -111,6 +111,7 @@ a.call            # returns 3
 
 - Lambda check the number of argument, while Proc not
 - Lambda and Proc treat the 'return' keyword differently
+- We should use the lambda at most time, just a no-name method. It is the best way to use Proc.
 
 ## Reference
 
