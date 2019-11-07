@@ -1,6 +1,7 @@
 # Rails CSRF
 
 - [深入 Rails 中的 CSRF Protection](https://ruby-china.org/topics/35199?page=2)
+- [ignore the authenticity token](https://stackoverflow.com/questions/1177863/how-do-i-ignore-the-authenticity-token-for-specific-actions-in-rails)
 
 跨站请求伪造(Cros Site Request Forgery)。一个未认证的用户伪造了一个数据请求，并且发到了服务器，让服务器以为这个请求来自一个已认证用户。Rails会生成一个token，每次请求的时候收到客户端请求的时候都会请求身份验证，以避免收到CSRF攻击。
 
