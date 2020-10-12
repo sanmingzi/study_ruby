@@ -10,6 +10,8 @@
 
 ### Demo1
 
+[demo1.rb](./demo1.rb)
+
 ```ruby
 module Test
   C = 10
@@ -34,6 +36,8 @@ puts "Person1.singleton_class.constants: #{Person1.singleton_class.constants}"
 in above demo, we use include and self.method1, this can access the constant in the module.
 
 ### Demo2
+
+[demo2.rb](./demo2.rb)
 
 ```ruby
 module Test
