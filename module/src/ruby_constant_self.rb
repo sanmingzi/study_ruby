@@ -37,3 +37,16 @@ rescue => exception
   puts exception.inspect
   # #<NameError: uninitialized constant #<Class:Developer>::NAME>
 end
+
+class Developer
+  def say
+    NAME << ' HELLO'
+    puts NAME
+  end
+
+  def self.say
+    puts NAME
+  end
+end
+Developer.new.say # Matz
+Developer.say # Matz HELLO
