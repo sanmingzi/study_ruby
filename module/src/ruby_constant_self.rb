@@ -12,7 +12,7 @@ class Developer
     puts NAME
   end
 end
-Developer.say
+Developer.say # Matz
 
 def Developer.say
   puts NAME
@@ -26,6 +26,9 @@ rescue => exception
 end
 
 class << Developer
+  puts self.ancestors.inspect
+  # [#<Class:Developer>, #<Class:Object>, #<Class:BasicObject>, Class, Module, Object, Kernel, BasicObject]
+
   def say
     puts NAME
   end
