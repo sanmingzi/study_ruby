@@ -1,5 +1,5 @@
 - 浮点数
-- benchmark
+
 - thread socket server
 - lock queue
 - Erlang pingpong
