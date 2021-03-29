@@ -1,14 +1,5 @@
 - 浮点数
 
-- marshal deep_copy
-- pstore
-- yaml yaml_store
-- madeleine
-- rexml
-- rexml stream_listener
-
-- gc
-
 ## 元编程
 
 - methods / instance_methods
