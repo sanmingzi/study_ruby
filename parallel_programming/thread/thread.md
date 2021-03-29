@@ -38,28 +38,46 @@ mutex.synchronize {
 
 为了说明这个概念，我想引用《松本行弘的程式世界》中的场景。假如有很多人在看电视，看电视和换频道就相当于二阶段互斥。有人在看电视的时候，其他人只能看同一个频道。如果没有互斥的话，看到一半被别人换台是一件非常讨厌的事情。
 
-二阶段互斥主要依靠 Sync 来实现。
+我们可以使用 Sync / Mutex 来实现二阶段互斥。书中介绍似乎 Sync 处理二阶段互斥问题更加好用，具体如何有待学习。TODO
 
 ```ruby
 @sync = Sync.new
 
 def start_watch
-  sync.locl(:SH)
-  # start_watch, can not switch channel
+  @sync.locl(:SH)
 end
 
 def end_watch
-  sync.unlock(:SH)
-  # end_watch, can switch channel
+  @sync.unlock(:SH)
 end
 
 def switch
-  sync.synchronize(:EX) {}
+  @sync.synchronize(:EX) {}
+end
+```
+
+```ruby
+@mutex = Mutex.new
+
+def start_watch
+  @mutex.locl
+end
+
+def end_watch
+  @mutex.unlock
+end
+
+def switch
+  @mutex.synchronize {}
 end
 ```
 
 [tv.rb](src/tv.rb)
 
 ## 队列
+
+ruby 中的 Queue 和 Array 有很大的不同。在 Queue 和 Array 都为空的情况下，Array.new.pop 会返回 nil，而 Queue.new.pop 会一直等待，直到出现数据为止。
+
+[queue.rb](src/queue.rb)
 
 ## 锁定模型 vs 队列模型
