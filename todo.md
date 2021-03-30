@@ -2,7 +2,6 @@
 
 ## 元编程
 
-- methods / instance_methods
 - diff between Class / Module, instance_method of Class
 - self
 - private
