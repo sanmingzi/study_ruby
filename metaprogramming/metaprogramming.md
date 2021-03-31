@@ -5,6 +5,5 @@
 - [对象](object.md)
 - 方法
   - [动态方法](dynamic_method.md)
-  - methods
-  - method_missing
+  - [method_missing](method_missing.md)
 - 块 (block)
