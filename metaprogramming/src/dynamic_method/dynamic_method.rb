@@ -1,23 +1,6 @@
-class Record
-  class << self
-    def define_attr(attr)
-      define_method attr do
-        @data[attr]
-      end
-    end
-  end
+# ruby 2.5.1p57 (2018-03-29 revision 63029) [x86_64-linux-gnu]
 
-  def initialize(data)
-    @data = data
-    data.keys.each { |k| self.class.define_attr(k) }
-  end
-end
-
-class Human < Record
-end
-
-class Dog < Record
-end
+require_relative 'record'
 
 human_data = {
   id: 1,
