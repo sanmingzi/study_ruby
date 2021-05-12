@@ -35,6 +35,20 @@ times3.call(times5.call(4))   #=> 60
 
 ## Proc vs Lambda
 
+- &
+
+```ruby
+block = proc {
+  puts 'in block'
+}
+self.instance_eval(&block) # in block
+
+block = lambda {
+  puts 'in block'
+}
+self.instance_eval(&block) # raise exception
+```
+
 - Proc and Lambda are both Proc objects.
 
 ```ruby
